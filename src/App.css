@@ -175,6 +175,9 @@ select::-ms-expand {
   padding: 10px;
 
 }
+svg{
+  cursor: pointer;
+}
 input{
   border-radius: 5px;
   outline: none;

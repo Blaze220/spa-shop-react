@@ -19,7 +19,7 @@ const router = createBrowserRouter(
     ],
   },
 ],
-{basename: "/spa-shop-react/"}
+// {basename: "/spa-shop-react/"}
 );
 
 createRoot(document.getElementById("root")!).render(
