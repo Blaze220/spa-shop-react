@@ -7,7 +7,8 @@ import ProductList from "./ProductList.tsx";
 import Product from "./Product.tsx";
 import ProductCreateForm from "./ProductCreateForm.tsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
   {
     path: "/",
     element: <App />,
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       { path: "products/:id", element: <Product /> },
     ],
   },
-]);
+],{basename: "/spa-shop-react/"});
 
 createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
