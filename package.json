@@ -1,7 +1,7 @@
 {
   "name": "spa-card",
   "private": true,
-  "homepage": "https://blaze220.github.io/spa-shop-react",
+  "homepage": "https://blaze220.github.io/spa-shop-react/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
