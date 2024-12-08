@@ -18,7 +18,9 @@ const router = createBrowserRouter(
       { path: "products/:id", element: <Product /> },
     ],
   },
-],{basename: "/spa-shop-react/"});
+],
+{basename: "/spa-shop-react/"}
+);
 
 createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
