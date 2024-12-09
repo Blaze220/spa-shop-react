@@ -8,7 +8,7 @@ import {
   setIsLike,
 } from "../store/ProductSlice";
 import Module from "./modal";
-import edit from "./assets/edit.png";
+
 const Product: FC = () => {
   const { id } = useParams();
   const { product, products } = useAppSelector((state) => state.product);
