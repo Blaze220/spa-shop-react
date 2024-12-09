@@ -15,6 +15,7 @@ const ProductList: FC = () => {
   const [page, setPage] = useState<number>(1);
   const [s, setS] = useState<string[]>([]);
   const [search, setSearch] = useState<string>("");
+  const favorite = useAppSelector((state=>state.product.favoriteArray))
   useEffect(() => {
     if (s.length == 0 && products.length !== 0) {
       let l: any[] = [];
@@ -27,6 +28,13 @@ const ProductList: FC = () => {
     }
     setMax(products.length);
   }, [products, s]);
+  useEffect (()=>{
+    let count = 0;
+    if (category == "Избранное") {
+      count = products.filter((i) => i.like == true).length;
+      setMax(count);
+    }
+  },[favorite])
 
   const changeCategory = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setCategory(e.target.value);
